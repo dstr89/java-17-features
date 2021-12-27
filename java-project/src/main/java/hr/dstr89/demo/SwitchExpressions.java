@@ -1,7 +1,7 @@
 package hr.dstr89.demo;
 
 import hr.dstr89.demo.enums.Day;
-
+@SuppressWarnings("all")
 public class SwitchExpressions {
 
     public static int numberOfLettersOldSchool(Day day) {
@@ -27,7 +27,9 @@ public class SwitchExpressions {
     }
 
     public static int numberOfLettersEnhancedSwitch(Day day) {
-       return switch (day) {
+       return
+
+       switch (day) {
             case MONDAY, FRIDAY, SUNDAY -> 6;
             case TUESDAY                -> 7;
             case THURSDAY, SATURDAY     -> 8;
