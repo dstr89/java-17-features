@@ -1,7 +1,5 @@
 package hr.dstr89.demo;
 
-import hr.dstr89.demo.records.CarClass;
-import hr.dstr89.demo.records.CarRecord;
 import hr.dstr89.demo.sealed.Car;
 import hr.dstr89.demo.sealed.Truck;
 import org.junit.jupiter.api.Test;

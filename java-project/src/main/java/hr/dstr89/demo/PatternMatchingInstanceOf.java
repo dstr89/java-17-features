@@ -1,6 +1,5 @@
 package hr.dstr89.demo;
 
-@SuppressWarnings("all")
 public class PatternMatchingInstanceOf {
 
     public static String checkTypeOldSchool(Object obj) {

@@ -1,7 +1,7 @@
 package hr.dstr89.demo;
 
 import hr.dstr89.demo.enums.Day;
-@SuppressWarnings("all")
+
 public class SwitchExpressions {
 
     public static int numberOfLettersOldSchool(Day day) {
