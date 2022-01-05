@@ -11,9 +11,14 @@ public class RandomNumberGenerator {
         return random.nextInt(bound);
     }
 
-    public static int randomGeneratorNewApi(int bound) {
-        RandomGenerator randomGenerator = RandomGeneratorFactory.getDefault().create();
-        return randomGenerator.nextInt(bound);
+    public static int randomGeneratorNewFactory(int bound) {
+        RandomGenerator generator = RandomGeneratorFactory.getDefault().create();
+        return generator.nextInt(bound);
+    }
+
+    public static int randomGeneratorNewInterface(int bound) {
+        RandomGenerator generator = RandomGenerator.getDefault();
+        return generator.nextInt(bound);
     }
 
 }
