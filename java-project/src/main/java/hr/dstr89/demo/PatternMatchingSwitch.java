@@ -19,6 +19,8 @@ public class PatternMatchingSwitch {
         return switch (obj) {
             case String s && s.length() > 0
                     -> Double.parseDouble(s);
+            case Number n ->
+                    n.doubleValue();
             default -> 0d;
         };
     }

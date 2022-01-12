@@ -19,13 +19,19 @@ class PatternMatchingSwitchTest {
     }
 
     @Test
-    void givenPatternMatchingImpl_whenParsingCorrectDouble_thenCorrectValueIsReturned() {
+    void givenPatternMatchingImpl_whenParsingCorrectString_thenCorrectValueIsReturned() {
         double actual = PatternMatchingSwitch.parseDoublePatternMatching("17.00");
         assertThat(actual).isEqualTo(17.00d);
     }
 
     @Test
-    void givenPatternMatchingImpl_whenParsingIncorrectDouble_thenDefaultValueIsReturned() {
+    void givenPatternMatchingImpl_whenParsingCorrectNumber_thenCorrectValueIsReturned() {
+        double actual = PatternMatchingSwitch.parseDoublePatternMatching(25);
+        assertThat(actual).isEqualTo(25d);
+    }
+
+    @Test
+    void givenPatternMatchingImpl_whenParsingIncorrectType_thenDefaultValueIsReturned() {
         double actual = PatternMatchingSwitch.parseDoubleOldSchool(false);
         assertThat(actual).isEqualTo(0d);
     }
